@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function (){
     const value =button.innerText;
     
     
+try{
     if(value=="AC"){
         ans="";
         display.value=ans;
@@ -46,7 +47,15 @@ document.addEventListener("DOMContentLoaded", function (){
         ans = ans +value;
     display.value = ans;
     
-    }
+    }  
+}
+catch (error){
+  ans="Bakchodi Mat Karo";
+  display.value = ans;
+
+}
+
+   
     
     
     
