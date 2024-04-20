@@ -32,9 +32,19 @@ try{
     
     }
     else if(value=="="){
-        ans=ans.replace("x","*")
+        ans=
+        ans.replace("x","*")
         .replace("%","*.01")
-        .replace("÷","/");
+        .replace("÷","/")
+        .replace("sin", "Math.sin")
+        .replace("cos", "Math.cos")
+        .replace("ln", 'Math.log')
+       .replace('π', 'Math.PI')
+       .replace('log', 'Math.log10')
+       .replace('e', 'Math.E')
+       .replace('tan', 'Math.tan')
+       .replace('√', 'Math.sqrt');
+       
     
     ans=evaluation();
     
